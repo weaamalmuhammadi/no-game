@@ -1,6 +1,8 @@
 extends Area2D
 
-
+@onready var Animation_player = $AnimationPlayer
 
 func _on_body_entered(body):
-	queue_free()
+	
+	Animation_player.play("coin")
+	
